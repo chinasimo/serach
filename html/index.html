@@ -1,0 +1,56 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>测试</title>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Flat Search Box Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"
+    />
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--Google Fonts-->
+</head>
+
+<body>
+    <!--search start here-->
+    <div class="search">
+        <i> </i>
+        <div class="s-bar">
+            <!-- <form action="" method="POST"> -->
+            <input id="search" type="text" value="Search your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search your name';}">
+            <input id="s_btn" type="submit" value="Search" />
+            <!-- </form> -->
+        </div>
+
+    </div>
+    <!--search end here-->
+    <div class="copyright">
+        <p>2021 &copy 智能时代学院大专部学生作品搜索 | <a href="http://www.ai-znsd.com/" target="_blank">  智能时代学院官网 </a></p>
+    </div>
+    <script>
+        // 搜索框写名字，有模糊搜索，能有下拉
+        // 点击搜索按钮，获取搜索名字
+        // 创建链接--名字.html
+        // 跳转到对应页面
+        var search = document.querySelector('#search');
+        var s_btn = document.querySelector('#s_btn');
+        s_btn.addEventListener('click', function() {
+            var name = search.value;
+            var name_url = name + ".html";
+            console.log(name_url);
+            location.href = name_url;
+        })
+    </script>
+</body>
+
+</html>
